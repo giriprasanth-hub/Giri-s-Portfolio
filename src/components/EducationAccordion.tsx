@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaGraduationCap, FaCertificate, FaChevronDown, FaTimes } from 'react-icons/fa';
 
+const BASE = import.meta.env.BASE_URL;
+
 const educationData = [
   {
     id: 'edu1',
@@ -20,7 +22,7 @@ const educationData = [
     duration: 'November 2024',
     details: 'Comprehensive study of Java core concepts, problem-solving, and object-oriented programming principles.',
     icon: <FaCertificate size={24} color="var(--neon-cyan)" />,
-    certificateUrl: '/Nptel.jpg'
+    certificateUrl: `${BASE}Nptel.jpg`
   },
   {
     id: 'cert2',
@@ -30,7 +32,7 @@ const educationData = [
     duration: 'April 2025',
     details: 'Exploration of modern Cloud Computing paradigms, deployment models, and scalable architectures.',
     icon: <FaCertificate size={24} color="var(--neon-cyan)" />,
-    certificateUrl: '/Cloud.jpg'
+    certificateUrl: `${BASE}Cloud.jpg`
   },
   {
     id: 'cert3',
@@ -40,7 +42,7 @@ const educationData = [
     duration: 'May 2025',
     details: 'Advanced schema design, complex query optimization, and relational database management methodologies.',
     icon: <FaCertificate size={24} color="var(--neon-purple)" />,
-    certificateUrl: '/MySQL.jpg'
+    certificateUrl: `${BASE}MySQL.jpg`
   },
   {
     id: 'cert4',
@@ -50,7 +52,7 @@ const educationData = [
     duration: 'Feb 2025',
     details: 'Exploration of Agile/Scrum lifecycles, REST API design, and standard software engineering practices.',
     icon: <FaCertificate size={24} color="var(--neon-blue)" />,
-    certificateUrl: '/IBM_se.jpg'
+    certificateUrl: `${BASE}IBM_se.jpg`
   },
   {
     id: 'cert5',
@@ -60,7 +62,7 @@ const educationData = [
     duration: 'March 2025',
     details: 'Foundational exploration of Artificial Intelligence concepts and modern AI tool workflows.',
     icon: <FaCertificate size={24} color="var(--neon-blue)" />,
-    certificateUrl: '/IBM_AI.jpg'
+    certificateUrl: `${BASE}IBM_AI.jpg`
   }
 ];
 
